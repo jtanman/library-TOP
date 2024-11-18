@@ -1,0 +1,79 @@
+/* Book Card Styles */
+.books-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 20px;
+}
+
+.book-card {
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 200px;
+    transition: transform 0.2s;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.book-card:hover {
+    transform: scale(1.05);
+}
+
+.book-card h2 {
+    font-size: 1.5em;
+}
+
+.book-card h2,
+.book-card p {
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+}
+
+.book-card .toggle-read-button {
+    margin-top: auto;
+}
+
+#add-book-button {
+    margin-left: 20px;
+}
+
+/* Form Styles */
+#book-form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-top: 20px;
+    max-width: 300px;
+    margin-left: 20px;
+}
+
+#book-form>* {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    width: 100%;
+}
+
+#book-form label {
+    margin-left: 10px;
+    display: block;
+    padding: 0;
+    border: none;
+}
+
+#book-form button {
+    padding: 10px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+#book-form button:hover {
+    background-color: #0056b3;
+}

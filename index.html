@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/modern-normalize/modern-normalize.css">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="books-container"></div>
+    <button id="add-book-button">Add Book</button>
+    <form id="book-form" style="display: none;">
+        <input type="text" id="title" placeholder="Title" required>
+        <input type="text" id="author" placeholder="Author" required>
+        <input type="text" id="pages" placeholder="Pages" inputmode="numeric" pattern="[0-9]*" required>
+        <label>
+            <input type="checkbox" id="read"> Read
+        </label>
+        <button type="submit">Add Book</button>
+    </form>
+
+    <script src="script.js"></script>
+</body>
+</html>
